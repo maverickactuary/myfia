@@ -1,0 +1,9 @@
+<nav>
+{% for item in site.data.lists %}
+  <a class="{% if item.url == page.folder %}active{% endif %}" href="{{item.url}}">{{item.title}}</a> 
+  {% comment %} 
+  -- item url: {{item.url}} 
+  -- page.folder: {{page.folder}}
+  {% endcomment %}
+{% endfor %}
+</nav>

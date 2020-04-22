@@ -1,0 +1,119 @@
+#skip-to-content {
+	display: none
+}
+
+.r1 td:nth-child(1), .r1 th:nth-child(1),
+.r2 td:nth-child(2), .r2 th:nth-child(2),
+.r3 td:nth-child(3), .r3 th:nth-child(3),
+.r4 td:nth-child(4), .r4 th:nth-child(4),
+.r5 td:nth-child(5), .r5 th:nth-child(5),
+.r6 td:nth-child(6), .r6 th:nth-child(6),
+.r7 td:nth-child(7), .r7 th:nth-child(7),
+.r8 td:nth-child(8), .r8 th:nth-child(8),
+.r9 td:nth-child(9), .r9 th:nth-child(9) { text-align:right }
+
+.c1 td:nth-child(1), .c1 th:nth-child(1),
+.c2 td:nth-child(2), .c2 th:nth-child(2),
+.c3 td:nth-child(3), .c3 th:nth-child(3),
+.c4 td:nth-child(4), .c4 th:nth-child(4),
+.c5 td:nth-child(5), .c5 th:nth-child(5),
+.c6 td:nth-child(6), .c6 th:nth-child(6),
+.c7 td:nth-child(7), .c7 th:nth-child(7),
+.c8 td:nth-child(8), .c8 th:nth-child(8),
+.c9 td:nth-child(9), .c9 th:nth-child(9) { text-align:center }
+
+.l1 td:nth-child(1), .l1 th:nth-child(1),
+.l2 td:nth-child(2), .l2 th:nth-child(2),
+.l3 td:nth-child(3), .l3 th:nth-child(3),
+.l4 td:nth-child(4), .l4 th:nth-child(4),
+.l5 td:nth-child(5), .l5 th:nth-child(5),
+.l6 td:nth-child(6), .l6 th:nth-child(6),
+.l7 td:nth-child(7), .l7 th:nth-child(7),
+.l8 td:nth-child(8), .l8 th:nth-child(8),
+.l9 td:nth-child(9), .l9 th:nth-child(9) { text-align:left }
+
+.page-header {
+	padding: 1rem 1rem
+}
+
+header {
+	z-index: 100;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 0
+}
+
+
+.tdlheading {
+/* Have fun at https://pinetools.com/lighten-color
+	color: #aec9f6;
+	color: #bbd2f8;
+*/
+	color: #c8dbf9;
+}
+
+main#content,
+.maincontent {
+	margin-top: 8rem
+}
+
+h1, h2 {margin-bottom: 0;
+		font-size: 1.8rem;
+}
+
+.project-name {
+	font-size: 1.75rem
+}
+
+.project-tagline {
+	margin: 0
+}
+
+nav a {
+	color: white;
+	padding: 0.1rem 0.3rem
+}
+
+nav a.active {
+	background-color: #78a6f1;
+	cursor: default
+}
+
+.update {
+	color: red;
+}
+
+em.update {
+	color: red;
+	font-style: normal;
+}
+
+.highlight {
+	background-color: #E4E4FF;
+	padding: 0.5rem
+}
+
+.main-content p.nobot {
+	margin-bottom: 0
+}
+
+.nobullets {
+	list-style-position: outside;
+	padding: 0 0 0 1rem
+}
+
+ul {
+	list-style-type: square
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+	color: #78a6f1
+}
+

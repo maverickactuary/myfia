@@ -1,0 +1,12 @@
+- title: Home
+  url: /
+- title: My 2folder
+  url: /content/2folder/
+- title: My 3folder
+  url: /content/3folder/
+- title: My 4folder
+  url: /content/4folder/
+- title: My 5folder
+  url: /content/5folder/
+- title: About &amp; contact
+  url: /content/6folder/
