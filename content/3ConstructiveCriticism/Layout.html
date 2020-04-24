@@ -1,0 +1,164 @@
+---
+layout: default
+# LHS: 1                 # Commented out means no LHS menu 
+RHS1: incMyFIALinks.html # The RHS include (1st i.e.  first include)
+RHS2: CC-RHS-Layout.html # The RHS include (2nd i.e. second include)
+bodyID: CC
+---
+
+<h1>What's wrong with the UKAPW layout?</h1>
+<div id="para1">If the website layout fits the site content, the site will have a consistent look and feel and will be perceived to be user-friendly.
+ Consistent layout should in turn drive consistent content. That means less wasted time for students, actuaries and potential actuaries and users of actuarial advice.</div>
+
+<!--	<div class="watermark top left"><div><img alt="Confidential" src="images/watermark.png" /></div></div>-->
+
+<h2>The UKAPW layout: more consistency required</h2>
+<p>The 2010 UKAPW is loosely based around a 3-column layout. The content and use of the third column (especially) is inconsistent from page to page, even among the "landing pages", which introduce the main areas of the site. Similarly, graphics are used inconsistently between these main pages. Good layout gives a sense of wellbeing absent on the UKAPW; on the UKAPW it's hard to get your bearings.</p>
+<p>The "columns" and "graphics" aspects are explored further below. We then explore the link between layout and content. 
+Finally we briefly summarise the intentions behind the myFIA layout and how it was implemented.</p>
+
+<h2>[1] Layout and columns</h2>
+<p>In the UKAPW's 3-column layout, the third column is used for a variety of purposes. But this seems more by accident than by design; sometimes 
+the third column is empty.</p>
+<span class="caption">Table: use of 3rd column, split by site area</span>
+<table>
+	<thead>
+     <tr><th>High level page</th><th>3rd column</th><th>High level page</th><th>3rd column</th></tr>
+	</thead>
+	<tbody>
+		<tr>
+        	<td><a href="http://www.actuaries.org.uk/becoming-actuary/pages/becoming-actuary" rel="external">Becoming an actuary</a></td>
+            <td>Associated documents</td>            
+            <td style="white-space: nowrap"><a href="http://www.actuaries.org.uk/news" rel="external">News</a></td>
+            <td>Search news + contacts + European actuary graphic</td>        
+        </tr>
+		<tr>
+            <td><a href="http://www.actuaries.org.uk/students" rel="external">Students</a></td>
+            <td>Certificates for students (but almost empty)</td>            
+            <td><a href="http://www.actuaries.org.uk/events" rel="external">Events</a></td>
+            <td>Search events + contacts</td>        
+        </tr>
+		<tr>
+            <td><a href="http://www.actuaries.org.uk/members" rel="external">Members</a></td>
+            <td>Find an actuary + actuarial directory</td>            
+            <td><a href="http://www.actuaries.org.uk/research-and-resources" rel="external">Research and resources</a></td>
+            <td>Search documents + contacts<br />+ European actuary graphic + publication of the month</td>
+        </tr>
+        <tr>
+            <td><a href="http://www.actuaries.org.uk/communities" rel="external">Communities</a></td>
+            <td>My communities</td>
+            <td><a href="http://www.actuaries.org.uk/regulation/pages/regulation" rel="external">Regulation</a></td>
+            <td>Associated documents</td>
+        </tr>
+        <tr>        
+            <td><a href="http://www.actuaries.org.uk/practice-areas/pages/practice-areas" rel="external">Practice areas</a></td>
+            <td>None</td>
+            <td><a href="http://www.actuaries.org.uk/about-us/pages/about-us" rel="external">About us</a></td>
+            <td>Associated documents (but they're not)</td>                   
+        </tr>
+	</tbody>
+</table>
+
+<h3>[1.1] The 3rd column: suggested improvements</h3>
+<ol>
+    <li>Sort out "light" content: Students, Practice areas and Communities (what are "document libraries"?).</li>
+    <li>Where there are "associated documents" make sure they are ... associated.</li>
+    <li>Consider why some areas have search functionality and others don't.</li>
+    <li>Consider putting "the European actuary" graphic in a more logical place(s).</li>
+    <li>Find an appropriate place for the "publication of the month".</li>
+</ol>
+
+<h3 class="pbbefore">[1.2] Columns and the home page</h3>
+<p>The home page completely lacks focus. I suspect this is the lack of columnar structure; the four columns again seem to have come about by chance &ndash; an afterthought rather than after thought. Perhaps things would have been better if a simpler three column layout had been adopted. This would have meant some rationalisation and restriction of home page content. See also <a href="/content/3ConstructiveCriticism/Homepage.asp"> myFIA's critique of the UKAPW home page</a></p>
+
+<h2>[2] Layout and graphics</h2>
+<p>The 2010 UKAPW makes more use of graphics than its predecessor. Personally I think the graphics bring little of value, especially on the home page, but I'd at least like to see graphics used consistently. We don't get this.</p>
+<span class="caption">Table: use of graphics split by site area</span>
+<table>
+	<thead>
+     <tr><th>High level page</th><th>Graphics</th><th>High level page</th><th>Graphics</th></tr>
+	</thead>
+	<tbody>
+		<tr>
+        	<td><a href="http://www.actuaries.org.uk/becoming-actuary/pages/becoming-actuary" rel="external">Becoming an actuary</a></td>
+            <td>Yes</td>            
+            <td style="white-space: nowrap"><a href="http://www.actuaries.org.uk/news" rel="external">News</a></td>
+            <td>No</td>        
+        </tr>
+		<tr>
+            <td><a href="http://www.actuaries.org.uk/students" rel="external">Students</a></td>
+            <td>No</td>            
+            <td><a href="http://www.actuaries.org.uk/events" rel="external">Events</a></td>
+            <td>Yes</td>        
+        </tr>
+		<tr>
+            <td><a href="http://www.actuaries.org.uk/members" rel="external">Members</a></td>
+            <td>Yes</td>            
+            <td><a href="http://www.actuaries.org.uk/research-and-resources" rel="external">Research and resources</a></td>
+            <td>No</td>        
+        </tr>
+        <tr>
+            <td><a href="http://www.actuaries.org.uk/communities" rel="external">Communities</a></td>
+            <td>Yes</td>
+            <td><a href="http://www.actuaries.org.uk/regulation/pages/regulation" rel="external">Regulation</a></td>
+            <td>No</td>            
+        </tr>
+        <tr>        
+            <td><a href="http://www.actuaries.org.uk/practice-areas/pages/practice-areas" rel="external">Practice areas</a></td>
+            <td>Yes</td>            
+            <td><a href="http://www.actuaries.org.uk/about-us/pages/about-us" rel="external">About us</a></td>
+            <td>No</td>                   
+        </tr>
+	</tbody>
+</table>
+
+<h3>[2.1] Graphics and the home page</h3>
+<p>In short, many of the graphics on the home page are irrelevant. They distract and take up space. The large graphics are self-congratulatory and 
+lack content and value. The associated links behave oddly. The other graphics obscure rather than enhance the user experience, compounding the layout issues.</p>
+
+<h3>[2.2] Graphics: suggested improvements</h3>
+<ul>
+<li>Improve the implementation of "big graphics" at the top of the home page</li>
+<li>Use fewer graphics, especially on the home page. Is there a text alternative?</li>
+<li>Remember: brand is not a logo or graphics, it's delivery on promises</li>
+</ul>
+
+<h2>[3] Consistent layout, consistent content and a "use test"</h2>
+<div>We claimed that "Consistent layout should in turn drive consistent content." Here's how this might work:</div>
+<ul>
+<li>Think about the content and what this might mean in terms of columns.</li>
+<li>Confirm the purpose of columns 1 and 3 e.g. navigation, functionality, related links.</li>
+<li>Start writing high level landing pages.</li>
+<li>Confirm that you can populate columns 1 and 3 appropriately.</li>
+<li>Continue this process with the lower level pages.</li>
+</ul>
+<p>This process will confirm &ndash; probably quick quickly &ndash; that the 3-column layout is appropriate (or not). Are the columns being used as expected? Is this easy or artificial?</p>
+
+<h2 class="pbbefore">[4] How we planned and implemented the myFIA layout</h2>
+<div>As ever things evolve, but here's how it works:</div>
+<ul>
+<li>The fundamental site design uses two columns.</li>
+<li>The first column is main content. The second column is:
+<ol>
+<li>myFIA navigation (always)</li>
+<li>Links from the UKAPW (to extent relevant)</li>
+<li>Other external links (to extent relevant)</li>
+<li>Additional content (occasionally, as only the main content prints)</li>
+</ol>
+</li>
+<li>There's some "clever" stuff on 2 and 3 above; where there are no relevant links the section is hidden, rather than being a heading with no content.
+ For the technically curious, this works as follows:
+  <ul>
+<li>The areas are identified with unique ids; #UKAPWlinks and #Extlinks</li>
+<li>If we want to hide the #UKAPWlinks area we set the page's class to UKAPWlinks in the BODY tag</li>
+<li>The CSS page sets ".UKAPWlinks #UKAPWlinks" to hidden</li>
+<li>Similarly for the Extlinks area</li>
+</ul>
+</li>
+<li>A similar CSS technique ensures the active area (currently "Constructive Criticism") is coloured purple</li>
+<li>The "positive alternatives" area demonstrates how the UKAPW could be re-engineered. A 3-column layout should work for UKAPW; the first column should contain functionality, while the use of the third column needs to tighten up.</li>
+<li>To support the above we constructed 2-column and 3-column templates.</li>
+</ul>
+
+<!-- InstanceEndEditable -->
+</div>

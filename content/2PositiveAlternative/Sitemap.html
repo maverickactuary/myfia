@@ -1,0 +1,65 @@
+---
+layout: default
+# LHS: 1                 # Commented out means no LHS menu 
+RHS1: incMyFIALinks.html # The RHS include (1st i.e.  first include)
+RHS2: PA-RHS-Sitemap.html # The RHS include (2nd i.e. second include)
+bodyID: PA
+---
+<h1>An alternative sitemap</h1>
+
+<div id="para1">This sitemap does everything the UKAPW sitemap does, and more. Unlike the UKAPW sitemap, the default view is "show all" but this can be changed to show just one area, or any preferred areas; all the headings are clickable and show/hide their contents. This is easier to see and play with than explain!
+</div>
+<div>The "show/hide" functionality requires Javascript to be enabled (the usual default setting). If Javascript is disabled you'll always have "view all". There is a separate <a href="/content/4AboutContact/myFIASitemap.asp">myFIA sitemap</a></div>
+<div class="info">
+<h2>Extra functionality</h2>
+<p>Every heading and sub-heading of the sitemap below ("Students", "Education and exams" etc) is clickable and will 
+show/hide items on a "toggle" basis.</p><p><strong>Don't forget to "page down" to see the results.</strong></p>
+<div><h3>Show just one area (c.f. the UKAPW) by clicking a link below</h3></div>
+<div class="colsplit3">
+<ul>
+<li><a href="javascript:toggleAllOnJust1(0);">Be an actuary</a></li>
+<li><a href="javascript:toggleAllOnJust1(1);">Students</a></li>
+<li><a href="javascript:toggleAllOnJust1(2);">Members</a></li>
+</ul>
+</div>
+
+<div class="colsplit3">
+<ul>
+<li><a href="javascript:toggleAllOnJust1(3);">Practice areas</a></li>
+<li><a href="javascript:toggleAllOnJust1(4);">Research</a></li>
+<li><a href="javascript:toggleAllOnJust1(5);">Communities</a></li>
+</ul>
+</div>
+
+<div class="colsplit3">
+<ul>
+<li><a href="javascript:toggleAllOnJust1(6);">Events</a></li>
+<li><a href="javascript:toggleAllOnJust1(7);">Regulation</a></li>
+<li><a href="javascript:toggleAllOnJust1(8);">About us</a></li>
+</ul>
+</div>
+<br />
+<div><h3>Other options</h3>
+<ul>
+<li><a href="javascript:toggleAllOn();">Show all</a> (i.e. back to default view)</li>
+<li><a href="javascript:toggleAllOff();">Hide all</a> (i.e. just show main areas)</li>
+<li><a href="javascript:removeClassFn('#ShowHideWrapper','ShowHideEnable');">Stop</a> the extra functionality</li>
+<li><a href="javascript:addClassFn('#ShowHideWrapper','ShowHideEnable');">Re-start</a> the extra functionality</li>
+</ul>
+</div>
+
+
+</div>
+
+<p>Other sites implement similar sitemap functionality &ndash; see the <a href="http://www.moneyadviceservice.org.uk/sitemap.aspx" rel="external">Money Advice Centre sitemap</a></p>
+
+<div id="Sitemap">
+<div id="ShowHideWrapper" class="ShowHide ShowHideEnable">
+    <!-- #include virtual="/inc/SitemapShowHide.asp" -->
+    {% include SitemapShowHide.html %}
+</div>
+</div>
+<br />
+
+<!-- InstanceEndEditable -->
+</div>

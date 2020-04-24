@@ -1,0 +1,439 @@
+---
+layout: default
+# LHS: 1                 # Commented out means no LHS menu 
+RHS1: incMyFIALinks.html # The RHS include (1st i.e.  first include)
+RHS2: CC-RHS-BadLinks.html # The RHS include (2nd i.e. second include)
+bodyID: CC
+---
+
+<h1>Dead links, misdirected links</h1>
+<div id="para1">This page highlights two types of bad link which affect the UKAPW:
+<ol>
+<li><strong>Misdirected links:</strong> These load the wrong page, given the link description.</li>
+<li><strong>Dead links:</strong> The page linked to doesn't exist.</li>
+</ol>We discuss and give examples of 1 and 2 above, then consider practical ways forward.</div>
+
+<h2>[1] Misdirected links</h2>
+<p>These are much harder to track down than dead links. Some of my intended examples have been corrected over recent months. No doubt the following examples will be corrected too. But what's the process for correcting them? And was there no checking process? There are two types of misdirection, as explained below.</p>
+<h3>[1.1] Misdirection to the wrong paper</h3>
+<p>This is nigh impossible to track down with automated tools, so a reporting facility should be set up. Examples:</p>
+<ol>
+<li>The page <a href="http://www.actuaries.org.uk/research-and-resources/documents/chasing-tail-modelling-correlations-and-dependencies-economic-capit" rel="external">Chasing the tail: modelling of correlations and dependencies in economic capital models</a> has a link which in fact opens a document "Stress and scenario testing".</li>
+<li>The link on the page <a href="http://www.actuaries.org.uk/research-and-resources/documents/liquidity-premium-open-forum" rel="external">Liquidity premium open forum</a> in fact opens a document "How should actuaries make use of catastrophe models?"</li>
+<li>The link on the page <a href="http://www.actuaries.org.uk/research-and-resources/documents/aggregation-and-diversification-benefits-ica-individual-capital-ass" rel="external">Aggregation and diversification benefits</a> in fact opens a document: "GRIT".</li>
+</ol>
+
+<h3>[1.2] Misdirection to the user login</h3>
+<p>I reported the "feature" in February 2011, without it being resolved &ndash; see the "Institute links" on the right. My guess is that the underlying page does not exist, but that the user login has been used as a custom error page.</p>
+
+<p>Example: The "more details" link on the page <a href="http://www.actuaries.org.uk/news/articles/worshipful-company-actuaries-lecture-world-needs-actuaries" rel="external">The world needs actuaries</a> in fact opens a member login page.</p>
+
+
+
+
+<h2>[2] Dead links</h2>
+<p>In principle these may be checked with tools such as the <a href="http://validator.w3.org/checklink/checklink" rel="external">W3C link checker</a> or <a href="http://home.snafu.de/tilman/xenulink.html" rel="external">Xenu link sleuth</a> Other tools are identified on the right. A list of bad links is set 
+out below. Although the list was partly obtained through using the Xenu freeware, I cannot vouch for its completeness. On request I can supply further information on how I used this program to find dead / misdirected links. I'd welcome a request from the UKAPW webmaster.</p>
+
+
+<h2>Dead links by area: a list</h2>
+<p>I've tried to omit "special" dead links that propagate across numerous pages. One example is the "my account" link on the top left of the page <a href="https://www.actuaries.org.uk/my-account/pages/exams" rel="external">exams</a> page and many similar pages.</p>
+<div>The rest of this section is organised as follows:</div>
+<ul>
+<li>[2.1] gives a summary of the dead links, split between the main areas of the UKAPW. It explains why 
+I am doubtful regarding the "no bad links" against the research area in the table below. </li>
+<li>[2.2] highlights a particular issue with regard to site structure.</li>
+<li>[2.3] explains how to examine bad links in more manageable chunks.</li>
+<li>[2.4] gives the full list of around 50 problematic links. Again note that this contains no misdirected links (such as in [1.1] above) 
+unless they misdirect to the login page.</li>
+</ul>
+
+<h3>[2.1] Dead links by area: a summary</h3>
+<p>The following table is unlikely to be completely reliable, as explained in [2.2].</p>
+<table>
+	<thead>
+     <tr><th>High level area</th><th style="white-space: nowrap"># bad links</th><th>High level area</th><th style="white-space: nowrap"># bad links</th></tr>
+	</thead>
+	<tbody>
+		<tr>
+        	<td><a href="http://www.actuaries.org.uk/becoming-actuary/pages/becoming-actuary" rel="external">Becoming an actuary</a></td>
+            <td>0</td>
+        <td><a href="http://www.actuaries.org.uk/communities" rel="external">Communities</a></td>
+            <td>0</td>
+        </tr>
+		<tr>
+            <td><a href="http://www.actuaries.org.uk/students" rel="external">Students</a></td>
+            <td>2</td>
+	        <td style="white-space: nowrap"><a href="http://www.actuaries.org.uk/news" rel="external">News</a></td>       
+            <td>6 dead (error code 404), 1 misdirect (error code 403)</td>
+        </tr>
+        <tr>
+        <td><a href="http://www.actuaries.org.uk/members" rel="external">Members</a></td>
+            <td>41</td>
+	        <td><a href="http://www.actuaries.org.uk/events" rel="external">Events</a></td>            
+            <td>2</td>
+        </tr>
+		<tr>
+        <td><a href="http://www.actuaries.org.uk/practice-areas/pages/practice-areas" rel="external">Practice areas</a></td>
+            <td>0 dead, 2 misdirects</td>
+        <td><a href="http://www.actuaries.org.uk/regulation/pages/regulation" rel="external">Regulation</a></td>
+            <td>2</td>
+        </tr>
+        <tr>
+        <td><a href="http://www.actuaries.org.uk/research-and-resources" rel="external">Research and resources</a></td>
+        <td>0 (but see below)</td>
+
+		<td><a href="http://www.actuaries.org.uk/about-us/pages/about-us" rel="external">About us</a></td>
+            <td>1</td>
+        </tr>
+	</tbody>
+</table>
+
+<h3>[2.2] Bad links and site structure</h3>
+<p>I find it very hard to believe that the research area really contains no dead or misdirected links, even if we restrict the latter to redirections to the member login page. One problem with identifying them through the Xenu software is that the links "time out" &ndash; presumably due to 
+many of them relating to pdf papers.</p>
+<p>The UKAPW site/folder structure is not transparent &ndash; see below. Automated link checking tools work best on sub-areas of the site e.g. I want to cover only regulation-related files (say). How do I know I'm not leaving out some 
+regulation-related files if I can't grasp the site structure?</p>
+<span class="caption">Table: UKAPW has a confusing folder structure</span>
+<table>
+	<thead>
+     <tr><th>Page</th><th>Stored at</th></tr>
+	</thead>
+	<tbody>
+		<tr>
+        	<td><a href="http://www.actuaries.org.uk/research-and-resources" rel="external">Research and resources home page</a></td>
+            <td><a href="http://www.actuaries.org.uk/research-and-resources" rel="external">http://www.actuaries.org.uk/research-and-resources</a></td>
+        </tr>
+		<tr>
+            <td><a href="http://www.actuaries.org.uk/research-and-resources/pages/research" rel="external">Research landing page</a></td>
+            <td><a href="http://www.actuaries.org.uk/research-and-resources/pages/research" rel="external">http://www.actuaries.org.uk/research-and-resources/pages/research</a></td>
+        </tr>        
+		<tr>
+            <td><a href="http://www.actuaries.org.uk/research-and-resources/pages/journals" rel="external">Journals landing page</a></td>
+            <td><a href="http://www.actuaries.org.uk/research-and-resources/pages/journals" rel="external">http://www.actuaries.org.uk/research-and-resources/pages/journals</a></td>         
+            </tr>        
+		<tr>
+            <td style="white-space: nowrap"><a href="http://www.actuaries.org.uk/research-and-resources/documents/graduation-mathematical-formula" rel="external">Graduation by mathematical formula</a></td>
+            <td><a href="http://www.actuaries.org.uk/research-and-resources/documents" rel="external">http://www.actuaries.org.uk/research-and-resources/documents/graduation-mathematical-formula</a></td>         </tr>        
+
+	</tbody>
+</table>
+
+<p>Unfortunately <a href="http://www.actuaries.org.uk/research-and-resources/pages/" rel="external">http://www.actuaries.
+org.uk/research-and-resources/pages/</a> doesn't load. Perhaps worse than this, <a href="http://www.actuaries.org.uk/research-and-resources/documents/" rel="external">http://www.actuaries.org.uk/research-and-resources/documents/</a> is an obituary.</p>
+<p><strong>Conclusion: </strong>People with more knowledge of the UKAPW site structure are better placed than me to carry out automated link checking of the research area.</p>
+
+<h3>[2.3] How to cut down the full list of bad links</h3>
+<div>Every heading and sub-heading of the sitemap below ("Students", "Education and exams" etc) is clickable and will show/hide items on a "toggle" basis. <strong>Don't forget to "page down" to see the results.</strong> In addition you can show/hide all items:</div>
+
+<ul>
+<li><a href="javascript:toggleAllOn();">Show all</a> (i.e. back to default view)</li>
+<li><a href="javascript:toggleAllOff();">Hide all</a> (i.e. just show the list of main areas)</li>
+</ul>
+<p>Finally individual areas can be examined by clicking on a link in the following box:</p>
+<div class="info">
+
+<div><h3>Show just one area below</h3></div>
+
+<div class="colsplit3">
+<ul>
+<li><a href="javascript:toggleAllOnJust1(0);">Be an actuary</a></li>
+<li><a href="javascript:toggleAllOnJust1(1);">Students</a></li>
+<li><a href="javascript:toggleAllOnJust1(2);">Members</a></li>
+<li><a href="javascript:toggleAllOnJust1(3);">Practice areas</a></li>
+</ul>
+</div>
+
+<div class="colsplit3">
+<ul>
+<li><a href="javascript:toggleAllOnJust1(4);">Research</a></li>
+<li><a href="javascript:toggleAllOnJust1(5);">Communities</a></li>
+<li><a href="javascript:toggleAllOnJust1(6);">News</a></li>
+</ul>
+</div>
+
+<div class="colsplit3">
+<ul>
+<li><a href="javascript:toggleAllOnJust1(7);">Events</a></li>
+<li><a href="javascript:toggleAllOnJust1(8);">Regulation</a></li>
+<li><a href="javascript:toggleAllOnJust1(9);">About us</a></li>
+
+</ul>
+</div>
+<br />
+</div>
+
+<h3>[2.4] The full list of bad links</h3>
+<ul>
+<li><a href="javascript:toggleAllOn();">Show all 10 areas</a></li>
+<li><a href="javascript:toggleAllOff();">Hide all 10 areas</a></li>
+</ul>
+
+<div id="ShowHideWrapper" class="ShowHide ShowHideEnable">
+<h3>(1) Be an actuary</h3>
+<!-- <dl><dt>Student sub-heading 1</dt> -->
+<dl>
+<!-- <dt>Students sub-heading &ndash; apologies for the extra click</dt> -->
+
+<dd>
+    
+<p>There are apparently no dead links under this area.</p>    
+    </dd>
+</dl>
+	
+<h3>(2) Students</h3>
+<dl>
+<dd>
+    
+<table>
+	<thead>
+     <tr><th>#</th><th>Parent page</th><th>Error page</th></tr>
+	</thead>
+	<tbody>
+<tr><td>1</td><td><a href="http://www.actuaries.org.uk/students/pages/sa2-learning-portal-actuarial-standards" rel="external">http://www.actuaries.org.uk/students/pages/sa2-learning-portal-actuarial-standards</a></td><td>http://www.actuaries.org.uk/students/pages/regulation/pages/professional-standards-directory</td></tr>
+<tr><td>2</td><td><a href="http://www.actuaries.org.uk/students/pages/sa2-learning-portal-articles" rel="external">http://www.actuaries.org.uk/students/pages/sa2-learning-portal-articles</a></td><td>http://www.actuaries.org.uk/students/pages/research-and-resources/documents/report-actuarial-processes-and-controls-best-practice-working-party</td></tr>
+	</tbody>
+</table>
+    
+    </dd>
+</dl>
+
+<h3>(3) Members</h3>
+<dl>
+	<dd>
+
+<table>
+	<thead>
+     <tr><th>#</th><th>Parent page</th><th>Error page</th></tr>
+	</thead>
+	<tbody>
+<tr><td>1</td><td><a href="http://www.actuaries.org.uk/members/pages/ealerts" rel="external">http://www.actuaries.org.uk/members/pages/ealerts</a></td><td>http://www.actuaries.org.uk/members/pages/conflicts-interest-discussion-paper-and-questionnaires</td></tr>
+<tr><td>2</td><td><a href="http://www.actuaries.org.uk/members/pages/ealerts" rel="external">http://www.actuaries.org.uk/members/pages/ealerts</a></td><td>http://www.actuaries.org.uk/members/pages/tas-standards-awareness-seminars-0</td></tr>
+<tr><td>3</td><td><a href="http://www.actuaries.org.uk/members/pages/general-insurance-pricing-seminar-17-march-2010" rel="external">http://www.actuaries.org.uk/members/pages/general-insurance-pricing-seminar-17-march-2010</a></td><td>http://www.actuaries.org.uk/members/transactions/conference_booking</td></tr>
+<tr><td>4</td><td><a href="http://www.actuaries.org.uk/members/pages/general-insurance-pricing-seminar-17-march-2010-0" rel="external">http://www.actuaries.org.uk/members/pages/general-insurance-pricing-seminar-17-march-2010-0</a></td><td>http://www.actuaries.org.uk/members/transactions/conference_booking</td></tr>
+<tr><td>5</td><td><a href="http://www.actuaries.org.uk/members/pages/global-financial-crisis-group" rel="external">http://www.actuaries.org.uk/members/pages/global-financial-crisis-group</a></td><td>http://www.actuaries.org.uk/members/transactions</td></tr>
+<tr><td>6</td><td><a href="http://www.actuaries.org.uk/members/pages/highlights-2009-life-conference" rel="external">http://www.actuaries.org.uk/members/pages/highlights-2009-life-conference</a></td><td>http://www.actuaries.org.uk/members/transactions/conference_booking</td></tr>
+<tr><td>7</td><td><a href="http://www.actuaries.org.uk/members/pages/highlights-2009-life-conference-0" rel="external">http://www.actuaries.org.uk/members/pages/highlights-2009-life-conference-0</a></td><td>http://www.actuaries.org.uk/members/transactions/conference_booking</td></tr>
+<tr><td>8</td><td><a href="http://www.actuaries.org.uk/members/pages/member-benefits" rel="external">http://www.actuaries.org.uk/members/pages/member-benefits</a></td><td>http://www.actuaries.org.uk/members/pages/cpd-scheme-0</td></tr>
+<tr><td>9</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-business-risk" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-business-risk</a></td>
+<td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population/<br />
+post_retirement_risks/glossary</td></tr>
+
+<tr><td>10</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-change-marital-or-partnership-status-risk" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-change-marital-or-partnership-status-risk</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population/<br />post_retirement_risks/glossary</td></tr>
+<tr><td>11</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-changes-housing-needs-risks" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-changes-housing-needs-risks</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population/<br />post_retirement_risks/glossary</td></tr>
+<tr><td>12</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-employment-risk" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-employment-risk</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/health_care_risk</td></tr>
+<tr><td>13</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-employment-risk-0" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-employment-risk-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/health_care_risk</td></tr>
+<tr><td>14</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-employment-risk-1" rel="external">http://www.actuaries.org.uk/members/pages/
+post-retirement-risks-employment-risk-1</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br /><br />/post_retirement_risks/health_care_risk</td></tr>
+
+<tr><td>15</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-health-care-risk" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-health-care-risk</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/independent_living_risk</td></tr>
+<tr><td>16</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-interest-rate-risk" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-interest-rate-risk</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/glossary</td></tr>
+<tr><td>17</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-interest-rate-risk" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-interest-rate-risk</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/inflation_risk</td></tr>
+<tr><td>18</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-interest-rate-risk" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-interest-rate-risk</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/business_risk</td></tr>
+<tr><td>19</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-lack-appropriate-information" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-lack-appropriate-information</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/glossary</td></tr>
+<tr><td>20</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-longevity-risk" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-longevity-risk</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/glossary</td></tr>
+<tr><td>21</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-loss-ability-live-independently-risk" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-loss-ability-live-independently-risk</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/glossary</td></tr>
+<tr><td>22</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-loss-ability-live-independently-risk" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-loss-ability-live-independently-risk</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/information_risk</td></tr>
+
+<tr><td>23</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-loss-ability-live-independently-risk" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-loss-ability-live-independently-risk</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/public_policy_risk</td></tr>
+<tr><td>24</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-stock-market-risk" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-stock-market-risk</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/glossary</td></tr>
+<tr><td>25</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-unforeseen-needs-family-members-risk" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-unforeseen-needs-family-members-risk</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/independent_living_risk</td></tr>
+<tr><td>26</td><td><a href="http://www.actuaries.org.uk/members/pages/post-retirement-risks-unforeseen-needs-family-members-risk-0" rel="external">http://www.actuaries.org.uk/members/pages/post-retirement-risks-unforeseen-needs-family-members-risk-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/ageing_population<br />/post_retirement_risks/independent_living_risk</td></tr>
+
+
+<tr><td>27</td><td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/<br />risk_management/committee/jules_constantinou</td></tr>
+
+<tr><td>28</td><td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/<br />risk_management/committee/keith_bevan</td></tr>
+
+<tr><td>29</td><td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/<br />risk_management/committee/andrew_cox</td></tr>
+<tr><td>30</td><td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/<br />risk_management/committee/seamus_creedon_profile</td></tr>
+<tr><td>31</td><td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/<br />risk_management/committee/william_diffey</td></tr>
+<!--
+<tr><td>32</td><td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/risk_management/committee<br />/paul_duffy</td></tr>
+<tr><td>33</td><td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/risk_management/committee<br />/donald_duval</td></tr>
+<tr><td>34</td><td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/risk_management/committee<br />/janhendrik_erasmus</td></tr>
+<tr><td>35</td><td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/risk_management/committee<br />/nikos_katrakis</td></tr>
+<tr><td>36</td><td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/risk_management/committee<br />/david_murray</td></tr>
+<tr><td>37</td><td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/risk_management/committee<br />/christopher_nichols</td></tr>
+<tr><td>38</td><td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/risk_management/committee<br />/steve_nuttall</td></tr>
+<tr><td>39</td><td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td><td>http://www.actuaries.org.uk/members/migs/topical_migs/risk_management/committee<br />/james_orr</td></tr>
+<tr>
+<td>40</td>
+<td><a href="http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0" rel="external">http://www.actuaries.org.uk/members/pages/risk-management-interest-group-committee-members-0</a></td>
+<td>http://www.actuaries.org.uk/members/migs/topical_migs/risk_management/committee<br />/lucinda_parlett</td>
+</tr>
+<tr><td>41</td>
+<td><a href="http://www.actuaries.org.uk/members/pages/uk-actuarial-profession-merger-vote-announcement" rel="external">http://www.actuaries.org.uk/members/pages/uk-actuarial-profession-merger-vote-announcement</a></td>
+<td>http://www.actuaries.org.uk/members/communications/merger_docs</td>
+</tr>
+-->
+	</tbody>
+</table>
+     
+    </dd>            	
+
+</dl>
+
+<h3>(4) Practice areas</h3>
+<!-- <dl><dt>Student sub-heading 1</dt> -->
+<dl>
+<!-- <dt>Students sub-heading &ndash; apologies for the extra click</dt> -->
+
+<dd>
+    
+<p>There are two misdirected links, but not dead links. Both misdirects go to the user account page.</p>    
+
+<table>
+	<thead>
+     <tr><th>#</th><th>Parent page</th><th>Error page</th></tr>
+	</thead>
+	<tbody>
+
+<tr><td>1</td><td><a href="http://www.actuaries.org.uk/practice-areas/pages/useful-contacts" rel="external">http://www.actuaries.org.uk/practice-areas/pages/useful-contacts</a></td><td>http://www.actuaries.org.uk/practice-areas/pages/enterprise-risk-management-education-cpd-career-support-and-development-subcomm</td></tr>
+<tr><td>2</td><td><a href="http://www.actuaries.org.uk/practice-areas/pages/useful-contacts" rel="external">http://www.actuaries.org.uk/practice-areas/pages/useful-contacts</a></td><td>http://www.actuaries.org.uk/practice-areas/pages/enterprise-risk-management-research-and-thought-leadership-subcommittee</td></tr>
+
+	</tbody>
+</table>
+
+
+    </dd>
+</dl>
+
+<h3>(5) Research</h3>
+<!-- <dl><dt>Student sub-heading 1</dt> -->
+<dl>
+<!-- <dt>Students sub-heading &ndash; apologies for the extra click</dt> -->
+
+<dd>
+    
+<p>There are apparently no dead links under this area.</p>    
+    </dd>
+</dl>
+
+<h3>(6) Communities</h3>
+<dl>
+	<dd>
+
+<p>There are apparently no dead links under this area.</p>          
+    </dd>            	
+</dl>
+
+<h3>(7) News</h3>
+<dl>
+	<dd>
+<p>The misdirects are all the same link, from 8 separate pages.</p>
+<table>
+	<thead>
+     <tr><th>#</th><th>Parent page</th><th>Error type</th><th>Error page</th></tr>
+	</thead>
+	<tbody>
+
+<tr><td>1</td><td><a href="http://www.actuaries.org.uk/news/articles/actuarial-profession-announces-funding-two-enterprise-risk-management-research-project" rel="external">http://www.actuaries.org.uk/news/articles/actuarial-profession-announces-funding-two-enterprise-risk-management-research-project</a></td><td>Dead</td><td>http://www.actuaries.org.uk/news/articles/michael.scanlan@actuaries.org.uk</td></tr>
+<tr><td>2</td><td><a href="http://www.actuaries.org.uk/news/articles/actuarial-profession-announces-funding-two-enterprise-risk-management-research-project" rel="external">http://www.actuaries.org.uk/news/articles/actuarial-profession-announces-funding-two-enterprise-risk-management-research-project</a></td><td>Dead</td><td>http://www.actuaries.org.uk/news/articles/www.actuaries.org.uk</td></tr>
+<tr><td>3</td><td><a href="http://www.actuaries.org.uk/news/articles/president-delivers-first-address" rel="external">http://www.actuaries.org.uk/news/articles/president-delivers-first-address</a></td><td>Dead</td><td>http://www.actuaries.org.uk/news/articles/news/videos/presidential-address</td></tr>
+<tr><td>4</td><td><a href="http://www.actuaries.org.uk/news/articles/publication-exposure-drafts-apss-pensions-actuaries-0" rel="external">http://www.actuaries.org.uk/news/articles/publication-exposure-drafts-apss-pensions-actuaries-0</a></td><td>Dead</td><td>http://www.actuaries.org.uk/news/articles/consultations@actuaries.org.uk.</td></tr>
+<tr><td>5</td><td><a href="http://www.actuaries.org.uk/news/pages/demography-and-mortality-news-alert" rel="external">http://www.actuaries.org.uk/news/pages/demography-and-mortality-news-alert</a></td><td>Misdirected</td><td>http://www.actuaries.org.uk/news/pages/news-alerts</td></tr>
+<tr><td>6</td><td><a href="http://www.actuaries.org.uk/news/pages/enterprise-risk-management-news-alert" rel="external">http://www.actuaries.org.uk/news/pages/enterprise-risk-management-news-alert</a></td><td>Misdirected</td><td>http://www.actuaries.org.uk/news/pages/news-alerts</td></tr>
+<tr><td>7</td><td><a href="http://www.actuaries.org.uk/news/pages/finance-and-investment-news-alert" rel="external">http://www.actuaries.org.uk/news/pages/finance-and-investment-news-alert</a></td><td>Misdirected</td><td>http://www.actuaries.org.uk/news/pages/news-alerts</td></tr>
+<tr><td>8</td><td><a href="http://www.actuaries.org.uk/news/pages/general-insurance-news-alert" rel="external">http://www.actuaries.org.uk/news/pages/general-insurance-news-alert</a></td><td>Misdirected</td><td>http://www.actuaries.org.uk/news/pages/news-alerts</td></tr>
+<tr><td>9</td><td><a href="http://www.actuaries.org.uk/news/pages/health-and-care-news-alert" rel="external">http://www.actuaries.org.uk/news/pages/health-and-care-news-alert</a></td><td>Misdirected</td><td>http://www.actuaries.org.uk/news/pages/news-alerts</td></tr>
+<tr><td>10</td><td><a href="http://www.actuaries.org.uk/news/pages/life-insurance-news-alert" rel="external">http://www.actuaries.org.uk/news/pages/life-insurance-news-alert</a></td><td>Misdirected</td><td>http://www.actuaries.org.uk/news/pages/news-alerts</td></tr>
+<tr><td>11</td><td><a href="http://www.actuaries.org.uk/news/pages/pensions-news-alert" rel="external">http://www.actuaries.org.uk/news/pages/pensions-news-alert</a></td><td>Misdirected</td><td>http://www.actuaries.org.uk/news/pages/news-alerts</td></tr>
+<tr><td>12</td><td><a href="http://www.actuaries.org.uk/news/pages/various-subjects-news-alert" rel="external">http://www.actuaries.org.uk/news/pages/various-subjects-news-alert</a></td><td>Misdirected</td><td>http://www.actuaries.org.uk/news/pages/news-alerts</td></tr>
+<tr><td>13</td><td><a href="http://www.actuaries.org.uk/news/press-releases/articles/eu-gender-equality-legislation-could-lead-inequality-provision-insuranc" rel="external">http://www.actuaries.org.uk/news/press-releases/articles/eu-gender-equality-legislation-could-lead-inequality-provision-insuranc</a></td><td>Dead</td><td>http://www.actuaries.org.uk/news/press-releases/articles/michael.scanlan@actuaries.org.uk</td></tr>
+<tr><td>14</td><td><a href="http://www.actuaries.org.uk/news/press-releases/articles/new-approach-towards-emerging-risk-life-assurance" rel="external">http://www.actuaries.org.uk/news/press-releases/articles/new-approach-towards-emerging-risk-life-assurance</a></td><td>Dead</td><td>http://www.actuaries.org.uk/news/press-releases/articles/www.actuaries.org.uk</td></tr>
+
+
+	</tbody>
+</table>
+      
+    </dd>            	
+</dl>
+
+<h3>(8) Events</h3>
+<dl>
+	<dd>
+
+<table>
+	<thead>
+     <tr><th>#</th><th>Parent page</th><th>Error page</th></tr>
+	</thead>
+	<tbody>
+
+<tr><td>1</td><td><a href="http://www.actuaries.org.uk/events/calendar/2008-01/7" rel="external">http://www.actuaries.org.uk/events/calendar/2008-01/7
+</a></td><td>http://www.actuaries.org.uk/events/calendar/2007-12/7</td></tr>
+<tr><td>2</td><td><a href="http://www.actuaries.org.uk/events/calendar/2008-01/8" rel="external">http://www.actuaries.org.uk/events/calendar/2008-01/8
+</a></td><td>http://www.actuaries.org.uk/events/calendar/2007-12/8</td>
+</tr>
+
+	</tbody>
+</table>
+      
+    </dd>            	
+</dl>
+
+
+<h3>(9) Regulation</h3>
+<dl>
+	<dd>
+
+<table>
+	<thead>
+     <tr><th>#</th><th>Parent page</th><th>Error page</th></tr>
+	</thead>
+	<tbody>
+
+<tr><td>1</td><td><a href="http://www.actuaries.org.uk/regulation/pages/institute-and-faculty-actuaries-designated-professional-body" rel="external">http://www.actuaries.org.uk/regulation/pages/institute-and-faculty-actuaries-designated-professional-body</a></td><td>http://www.actuaries.org.uk/regulation/pages/professional-indemnity-pii-requirements</td></tr>
+<tr><td>2</td><td><a href="http://www.actuaries.org.uk/regulation/pages/institute-and-faculty-actuaries-designated-professional-body" rel="external">http://www.actuaries.org.uk/regulation/pages/institute-and-faculty-actuaries-designated-professional-body</a></td><td>http://www.actuaries.org.uk/regulation/pages/dpb-hearings-determination</td></tr>
+
+	</tbody>
+</table>
+      
+    </dd>            	
+</dl>
+
+<h3>(10) About us</h3>
+<dl>
+	<dd>
+
+<table>
+	<thead>
+     <tr><th>#</th><th>Parent page</th><th>Error page</th></tr>
+	</thead>
+	<tbody>
+
+<tr><td>1</td><td><a href="http://www.actuaries.org.uk/about-us/pages/links-other-sites" rel="external">http://www.actuaries.org.uk/about-us/pages
+/links-other-sites</a> changed to<br /><a href="http://www.actuaries.org.uk/research-and-resources/pages/links-other-sites" rel="external">http://www.actuaries.org.uk/research-and-resources/pages/links-other-sites</a></td><td>http://www.actuaries.org.uk/about-us/pages/The%20Actuary%20magazine</td></tr> 
+
+	</tbody>
+</table>
+<p>Top of the "links to other sites" page was the dead link to "The Actuary" magazine shown on the right. This has been corrected, but is 
+left here as an example.</p>      
+    </dd>            	
+</dl>
+  
+</div>
+
+
+<h2>Practical ways forward</h2>
+<p>While maintaining the integrity of a website with more than 26,000 pages is a thankless task &ndash; especially after a site re-design &ndash; progress is possible. The recommendations below, together with the bad links reported on this page, give a practical route by which the problem of bad links could be rapidly eliminated.</p>
+<h2>Recommendations</h2>
+<ol>
+<li>Set up a reporting facility for dead links.</li>
+<li>Automatically identify when a dead link is loaded from a page.</li>
+<li>Automate sitewide dead link identification using e.g. <a href="http://home.snafu.de/tilman/xenulink.html" rel="external">Xenu link sleuth</a></li>
+<li>Make the results publicly available. This approach to correction:
+    <ul>
+    <li>makes the UKAPW web team publicly accountable</li>
+    <li>avoids duplicate reporting of bad links</li>
+    <li>demonstrates improved link integrity over time</li>
+    </ul>
+</li>
+<li>Correct the bad links identified on this page.</li>
+<li>Reply to emails (please!) &ndash; the right hand pane documents my attempt.</li>
+</ol>
+
+
+
+<!-- InstanceEndEditable -->
+</div>

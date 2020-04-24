@@ -1,10 +1,28 @@
----
-# front matter tells Jekyll to process Liquid
----
-
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en" }}">
+
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Actuaries: we can do better</title>
+    <meta name="description" content="The alternative UK actuarial website" />
+
+    <script type="text/javascript" src="/js/toggle.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.4.4.min.js"></script>
+
+    <link rel="stylesheet" href="/css/ShowHide.css" type="text/css" /> 
+    <link rel="stylesheet" type="text/css" href="/css/Tables.css" media="all" />
+    {% if page.LHS %}
+      <link rel="stylesheet" type="text/css" href="/css/OTLFixed312.css" media="all" />
+    {% else %}
+      <link rel="stylesheet" type="text/css" href="/css/OTLFixed12.css" media="all" />
+    {% endif %}
+      <link rel="stylesheet" type="text/css" href="/css/print.css" media="print" /> 
+  </head>
+
+    {% include myFIACondInclude.html %}   <!-- gives horizontal scroll bar-->
+
+<!-- 
+<head>
 
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
@@ -21,43 +39,56 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/newstyles.css">
-    
-  </head>
-  <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
+    <link rel="stylesheet" type="text/css" href="/css/OTLFixed312.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/css/print.css" media="print" /> 
 
-    <!-- <header class="page-header" role="banner"> -->
-    <header class="page-header">
-      {% include navigation.html %}
-      <!-- <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1> -->
-      <h1 class="project-name">My title</h1>
-      <!-- <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>-->
-      <h2 class="project-tagline">My tagline</h2>
-      
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
-    </header>
+  </head>
+-->
+<!-- InstanceBeginEditable name="BodyID" -->
+<!-- <body id="Home"> Instead incorporate front matter here -->
+<!-- InstanceEndEditable -->
+<!--  <body> -->
+
+    {% if page.bodyID %}
+      <body id="{{ page.bodyID }}">
+    {% else %}
+      <body>
+    {% endif %}
+
 
     <main id="content" class="main-content">
+     
+      <div id="breadcrumb"> 
+        <p>You are here: <a href="/" class="home">myFIA Home</a></p>
 
-      {{ content }}
+        {% include incDropMenu.html %}
+      </div>
 
-      <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+<div id="wrapper">
+
+  <!-- the columns appear strangely ordered, but it's all handled with floats -->
+    {% if page.RHS1 %}
+      <div id="block_2"> <!-- this is actually the third column -->
+        {% include {{page.RHS1}} %}
+        {% if page.RHS2 %}
+          {% include {{page.RHS2}} %}
         {% endif %}
-        <!-- <span class="site-footer-credits">Hosted on <a href="https://pages.github.com">GitHub Pages</a> customized by Andrew Howe and deployed on <a href="https://www.netlify.com/">Netlify</a> | <a href="https://validator.w3.org/nu/?doc=https://maverickactuary.github.io{{ page.url }}">HTML validator</a></span> -->
-        
-        Built with <a href="https://github.com">GitHub</a>, <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://www.netlify.com/">Netlify</a> and the Howe team | <a href="https://validator.w3.org/nu/?doc=https://maverickactuary.github.io{{ page.url }}">HTML validator</a>
-      
-      </footer>
+      </div> <!-- end block_2 -->
+    {% endif %}
+
+    {% if page.LHS %}
+    <div id="block_3">
+    {% include incFunctionality.html %} <!-- this is the first column ... -->
+    </div>
+    {% endif %}
+  
+  <div id="block_1">
+    {{ content }}  <!-- this is the 2nd (typically central) content column ... -->
+  </div> <!-- end block_1 -->
+
+</div><!-- close div#wrapper -->      
+
     </main>
+    {% include footer.html %}
   </body>
 </html>

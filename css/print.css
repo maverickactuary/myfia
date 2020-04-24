@@ -1,0 +1,258 @@
+#printFooter { /* For print only - display: none for screen */
+	display: block;
+	position: fixed; 
+	bottom: 0;
+	width:100%;
+	height: 50px;
+	font-size: 13px;
+	border-top: 1px solid #999; 
+}
+
+.imgFooter {
+	float:right;
+	margin:5px -10px -10px -10px;
+}
+
+
+.pbbefore {
+	page-break-before:always;
+}
+
+.pbafter {
+	page-break-after:always;
+}
+
+
+table {
+/*	table-layout: fixed;
+	width: 300px;
+	font-family: Georgia, Verdana, Arial, Helvetica, sans-serif;
+	font-size: .75em;
+	border-collapse: collapse;
+	border: 1px solid #333;
+	text-align:right;
+	caption-side:top;*/
+	
+	margin-left:1px!important;
+	margin-top:0;
+}
+
+/*
+caption {
+	font-weight: bold;
+	padding-left: 10px!important;
+}
+*/
+.nowrap { white-space: nowrap;}
+
+
+img {
+	max-width: 100%;
+}
+
+thead th, tbody td,tbody th {
+	border:1px solid #999;
+	vertical-align: top;
+}
+
+#block_1 h2 {
+	border-bottom: 1px dashed #999;
+}
+
+
+body, #block_1, h1 {
+	font-family: Verdana, sans-serif!important;
+	font-size: 10pt!important;
+	line-height: 1.75!important;
+	color: #333!important; 
+	background: #FFF!important;
+}
+
+h1 { margin-right:0px!important;
+}
+
+#para1, p, div { margin:0px!important;
+}
+
+#para1{ 
+	font-size: 11pt!important;
+	color:#000!important;
+	font-weight:bold!important;
+	font-style:italic;
+}
+
+h1 {
+	font-family: "Trebuchet MS", sans-serif!important;
+	color: #000!important;
+	font-size: 13pt!important;
+	font-weight:bold!important;
+	border-bottom: 1px dashed gray!important;
+	text-transform: uppercase!important;
+	padding:5px 0px 5px 0px!important;
+	letter-spacing: 1px!important;
+	margin-left: 0px!important;
+}
+
+h2 {font: 1.5em Georgia, "Times New Roman", serif!important; letter-spacing: 1px!important; 
+	margin: 10px 0 0 0!important;
+	font-size:12pt!important;
+	color:#000!important;
+	font-weight:bold!important;
+}
+
+h3 {font: bold 1em Verdana, Arial, sans-serif!important; letter-spacing: 1px!important;
+}
+
+.noprint, .Banner1, #menu, .menu, #breadcrumb, #footer, #block_2, #block_3 {
+   display: none!important;
+   }
+
+a[href^="http"]:before {
+	content: none!important;
+}
+
+a { text-decoration: none; 	color: #333!important; border-bottom:1px dashed; }
+h3.info a { 
+	text-decoration: none!important; 	
+/*	color: #333!important; */
+	border: none!important;
+}
+h3.info  { 
+	border: 1px solid!important;
+/*	border:none!important;*/
+	border-color: red!important;
+	width:96%!important;
+}
+
+
+dd {
+	width:100%!important;
+	margin-left:8px!important;
+}
+
+
+
+#block_1 {
+	margin:0!important;
+	width:100%!important; }   
+	
+#block_1, #block_2, #block_3 {
+	padding-bottom: 0px!important;
+	margin-bottom: 0px!important; 
+}
+
+body, div {
+  float: none !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.75!important;  
+}
+
+ol { 
+	padding-left:0px!important;
+	line-height: 1.75!important;
+}
+
+ol.ul, ul {
+/* ordered list styled with a square to give better control over indents - very sdtrange we need to do this 
+i.e. doesn't work with plain ul but need ol.ul! */
+	list-style: square!important;
+	padding-left:0px!important;
+	line-height: 1.75!important;
+}
+
+ul.nobullet {
+/* ordered list styled with a square to give better control over indents - very sdtrange we need to do this 
+i.e. doesn't work with plain ul but need ol.ul! */
+	list-style: none!important;
+}
+
+#PA .colsplit3, dd, dl, dt {
+	margin-right:0px!important;
+	width:105%!important;
+}
+
+dl, dd, dt {
+	padding: 0px!important;
+	margin: 0px!important;
+}
+
+#ShowHideWrapper h3 {
+/*		padding:0px!important; 
+		padding-top: 0px!important;
+		padding-bottom: 0px!important;*/
+/*		margin-bottom:10px!important;
+		margin-top:10px!important;*/
+/*		border: solid 1px gray!important; 10072011
+		border-bottom: solid 1px!important; */
+		margin-top: 20px!important;
+		padding-top: 10px!important;
+		margin-bottom: 20px!important;
+		padding-bottom: 0px!important;
+
+
+		border-top: solid 1px!important;
+		border-bottom: solid 1px!important;		
+		border-color: #000!important;
+}
+
+#PA .colsplit3 {
+	list-style: none!important;
+	width: 29%!important;
+	padding-right: 10px!important;
+}
+
+#PA dd+.colsplit3 {
+	margin-left:-10px!important;
+}
+/*
+caption {
+	margin-left: 0px!important;
+	padding-bottom: 0px!important;
+}
+*/
+
+.caption {
+	color: #fff;
+	font-size: 10pt!important;
+	font-weight: bold!important; 
+	margin: 0 0 5px 0px!important;
+}
+
+.info, .go, .care, .halt, .intro {
+	color:#000!important;
+    border: 1px solid;
+	padding: 0px 10px 0px 10px!important;
+	background-repeat: no-repeat;
+}
+/* 09072011
+*/
+
+#block_1 .info {
+	margin-left:0px!important;
+	margin-right: 0px!important;
+/*	padding-right:0px!important;*/
+}
+
+div.colsplit2 {
+  width: 44%!important; 
+  margin-left: 7px!important; 
+  float: left!important;
+}
+
+div.colsplit3 {
+  width: 32%!important;
+  float: left!important;
+}
+
+br {
+  clear: left!important;
+}
+
+ /* primarily for that list of act assocs on the home page */
+
+#block_1>.info ul.nobullet {
+	margin-left: 7px!important;
+	margin-right: 0px!important;
+}

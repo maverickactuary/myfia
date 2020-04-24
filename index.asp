@@ -13,7 +13,7 @@
 <!-- InstanceEndEditable -->
 <!-- <div id="container"> -->
     <div id="megamenu"> 
-    <!-- myinclude virtual="/inc/myFIACondInclude.asp" -->
+    <!-- #include virtual="/inc/myFIACondInclude.asp" -->
     </div>
     <div id="breadcrumb"> 
         <p>You are here: <a href="/" class="home">myFIA Home</a>
@@ -21,7 +21,7 @@
 
 
 <!-- InstanceEndEditable --></p>
-    <!-- myinclude virtual="/inc/incDropMenu.asp" -->
+    <!-- #include virtual="/inc/incDropMenu.asp" -->
     </div>
 <div id="wrapper">
 
@@ -91,7 +91,7 @@
 </div>
 
 <div id="block_3">
-<!-- myinclude virtual="/inc/incFunctionality.asp" -->
+<!-- #include virtual="/inc/incFunctionality.asp" -->
 <!-- InstanceBeginEditable name="block_3" -->
 <!-- InstanceEndEditable -->
 </div>
@@ -194,9 +194,9 @@ each new challenge."</em> The UKAPW should support this aim.</p>
 <!-- InstanceBeginEditable name="footer" -->
 
 <!-- InstanceEndEditable -->
-<!-- myinclude virtual="/inc/myFIAfooter.asp" -->
+<!-- #include virtual="/inc/myFIAfooter.asp" -->
 </div>
 <!-- </div>--> <!-- close div#container -->
-<!-- myinclude virtual="/inc/JSIE6.asp" -->
+<!-- #include virtual="/inc/JSIE6.asp" -->
 </body>
 <!-- InstanceEnd --></html>

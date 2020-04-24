@@ -1,0 +1,103 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/dd_valid.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the assocaited (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+/* common styling */
+.menuRHS {
+	font-family: arial, sans-serif; 
+	font-size:11px; 
+	width:650px; 
+	height:100px; 
+	position:relative; 
+	z-index:0;
+}
+
+.menuRHS ul li a, .menuRHS ul li a:visited, .menuRHS ul li a:hover  {
+	width:154px;
+	float: right;
+}
+
+.container-menuRHS {
+	margin-top:-26px; 
+	float:right; 
+	height:0px; /* fixes purple space bug - but menu is pushed out of the span by the z-index */ 
+	width:624px; /* fixes failed positioning - width of .menuRHS -26px */
+	width:664px; /* increased by 4*10px to enable left hand padding below */
+}
+
+.menuRHS ul li a, .menuRHS ul li a:visited {
+	display:block; 
+	text-decoration:none; 
+	color:#000; 
+	height:20px; 
+	line-height:20px; 
+	color:#fff; 
+	border:1px solid #fff; 
+	background:#66F; /*#710069;*/
+	font-size:11px; 
+	overflow:hidden;
+}
+
+.menuRHS ul li a {
+	text-align:center;
+	text-align:left;
+	padding-left:10px;
+	
+}
+
+.menuRHS ul li ul li a {
+	text-align:left;
+	padding-left:10px;
+/*	padding-right:-50px;*/
+/*	margin-left:-10px;
+	margin-right:-10px;*/
+}
+
+.menuRHS ul li a:visited {
+	display:block; 
+	text-decoration:none; 
+	color:#000; 
+	height:20px; 
+	/*text-align:center;*/ 
+	color:#fff; 
+	border:1px solid #fff; 
+	background:#66f;
+	line-height:20px; 
+	font-size:11px; 
+	overflow:hidden;
+}
+
+
+.menuRHS ul {
+	padding:0; 
+	margin:0; 
+	list-style: 
+	none;
+}
+.menuRHS ul li {
+	float:left; 
+	position:relative;
+}
+.menuRHS ul li ul {
+	display: none;
+}
+
+/* specific to non IE browsers */
+
+.menuRHS ul li:hover a {color:#fff; background:#90f; }
+.menuRHS ul li:hover ul {display:block; position:absolute; top:21px; width:105px;}
+.menuRHS ul li:hover ul li a.hide {background:#6a3; color:#fff;}
+.menuRHS ul li:hover ul li:hover a.hide { color:#000;}
+.menuRHS ul li:hover ul li ul {display: none;}
+.menuRHS ul li:hover ul li a {display:block; background:#b4a4ec; color:#000;}
+.menuRHS ul li:hover ul li a:hover {background:#90F; color:#000;}
+.menuRHS ul li:hover ul li:hover ul {display:block; position:absolute; left:105px; top:0;}
+.menuRHS ul li:hover ul li:hover ul.left {left:-105px;}
+
+body#CS .menuRHS ul li:hover a.hide {
+	}	

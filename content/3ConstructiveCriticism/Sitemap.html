@@ -1,0 +1,96 @@
+---
+layout: default
+# LHS: 1                 # Commented out means no LHS menu 
+RHS1: incMyFIALinks.html # The RHS include (1st i.e.  first include)
+RHS2: CC-RHS-Sitemap.html # The RHS include (2nd i.e. second include)
+bodyID: CC
+---
+
+<h1>The UKAPW sitemap: not fit for purpose, occasionally disastrous</h1>
+<p id="para1">It is surely hard to dispute the mess that the UKAPW has made of the simple sitemap concept. This pages seeks to justify my "not fit" 
+and "occasionally disastrous" assertions. Fortunately these issues are relatively easy to fix, given a willingness to look at what others have done.</p>
+
+<h2>[1] Not fit for purpose</h2>
+<p>What is the purpose of a sitemap? <a href="http://www.useit.com/alertbox/sitemaps.html" rel="external">Some wisdom from usability guru Jakob 
+Nielsen</a> explains:</p>
+<div class="info">
+<div><h2>Nielsen's key sitemap points:</h2></div>
+<ul>
+<li>A sitemap is a special page intended to act as a website guide.</li>
+<li>A sitemap's main purpose is to give an "at a glance" overview of the site's areas...</li>
+<li>...by dedicating an entire page to a visualization of the information architecture.</li>
+<li>If designed well, this overview can include several levels of hierarchy ...</li>
+<li>... and yet not be so big that users lose their grasp of the map as a whole.</li>
+</ul>
+</div>
+<p>A sitemap does not need to link to every page on the site; for large sites this is impossible in practice. Less obviously, a sitemap does not even have to cover each "level" of the site.</p>
+<p>Let's consider how the UKAPW sitemap measures up to the Nielsen points.</p>
+
+<h3>[1.1] Hidden items fail to give an "at a glance" overview</h3>
+<p>Most of the links from the sitemap are hidden, preventing an overview. In a bizarre approach all links other than those under "Becoming an actuary" are hidden under their respective headings. Clicking on the heading for one of the areas brings up all the links relevant for that area, but closes all the links for other areas.</p>
+<p>Not only is it impossible to get an overview, but finding a particular link becomes a game of "hide and seek". Since this effect is achieved 
+using Javascript, everything can be seen by disabling Javascript. But why should we have to do so? This is an example of <a href="/content/3ConstructiveCriticism/SortingItOut.asp">CV-driven design</a> as explained on the page <a href="/content/3ConstructiveCriticism/SortingItOut.asp">sorting it out</a></p>
+<div>Better &ndash; and rather similar &ndash; implementations of the "show/hide" concept can be found at:</div>
+<ul>
+<li>the <a href="http://www.moneyadviceservice.org.uk/sitemap.aspx" rel="external">Money advice service</a></li>
+<li>myFIA's <a href="/content/2PositiveAlternative/Sitemap.asp">positive alternative sitemap</a></li>
+</ul>
+<h3>[1.2] Sitemap is inconsistent with high level navigation</h3>
+<p>The high level horizontal navigation of UKAPW has 10 areas, beginning with "Becoming an actuary" and ending with "About us". The sitemap has all of these plus 7 others ("Accessibility statement", "Contact us", "Disclaimer", "Privacy policy", "Search", "Site features" and "Site map"). So 17 areas in total.</p>
+<p>Worse than this, navigation and the sitemap can be blatantly out of line. For example the "About us" area on the sitemap has 10 sub-areas (ignoring the "landing page") starting with "What membership means" and ending with "Links to other sites". The horizontal menu "About us" has only 3 links/areas. How has this "cut down" from sitemap to navigation been made? What criteria have been used?</p>
+<h3>[1.3] Sitemap exhibits inconsistent behaviours</h3>
+<div>The 10 areas mentioned above open up further levels of navigation when clicked. The 7 additional areas behave in different ways, loading other pages. A simpler approach, enabling consistent behaviours, would be:</div>
+<ul>
+<li>Relabel "About us" as "About"</li>
+<li>Have sub-items "About us" and "About the site"</li>
+<li>Place the 7 areas under "About the site"</li>
+</ul>
+<h3>[1.4] Sitemap has too many (unnumbered) levels</h3>
+<p>Our <a href="/content/1CaseStudies/">case studies</a> demonstrate that many sitemaps show only two or three levels; anything more detailed makes it too hard to grasp the site content and structure "at a glance". The UKAPW sitemap is much more complex.</p>
+<p>Example: the sitemap implies the following 4 level path:</p>
+<p><a href="http://www.actuaries.org.uk/becoming-actuary/pages/becoming-actuary" rel="external">Becoming an actuary</a> &gt; <a href="http://www.actuaries.org.uk/becoming-actuary/pages/our-qualifications" rel="external">Our qualifications</a> &gt; <a href="http://www.actuaries.org.uk/becoming-actuary/pages/associate-membership" rel="external">Associate membership</a> &gt; <a href="http://www.actuaries.org.uk/becoming-actuary/pages/frequently-asked-questions-associateship" rel="external">Frequently asked questions</a></p>
+<p>This is far too difficult. As a minimum the items should be numbered, rather like a book's contents and perhaps colour coded. Better still, consider dropping levels higher than 2 from the sitemap and main navigation, perhaps with lower levels under "related links". This is consistent with the approach 
+<a href="/content/1CaseStudies/">our 4 case studies</a> adopt.</p>
+<h3>[1.5] It is impossible to jump to sitemap sections</h3>
+<p>Not only are the sections not numbered and therefore difficult to identify, but they are spread over multiple "screens" &ndash; depending on your monitor size. Leaving aside the best solution of having a more compact sitemap, this issue could be solved by having an "expand all" and "close all" options. "Close all" would then 
+show the area headings, with no sub-areas visible.</p>
+<h3>[1.6] Printing the sitemap doesn't help</h3>
+<p>You get what's on the screen; there is no simple way to print the whole sitemap.</p>
+<h2>Other problems</h2>
+<p>Some links have long, confusing or overly generic link descriptions. The links are also somewhat oddly grouped, exacerbated by the description issues. These issues might be resolved by (a) hiding levels 3-5 and (b) regrouping and redescribing lower level links.</p>
+<div>This is something I've tried to illustrate in:</div>
+<ul>
+<li>myFIA's <a href="/content/2PositiveAlternative/Sitemap.asp">positive alternative sitemap</a></li>
+<li>The horizontal navigation across the very top of this page</li>
+</ul>
+
+
+<h2>[2] Occasionally disastrous</h2>
+<p>While the disasters are at times amusing or depressing, much more important is that the UKAPW sitemap is inaccessible in a layman's sense for all users. There may also be issues for people who struggle to use a mouse.
+There is absolutely no need for this to be the case.</p>
+<h3>[2.1] The disappearing sitemap</h3>
+<p>In January 2011 I emailed the UKAPW to point out that the sitemap has disappeared. While I received a brief acknowledgement, it took two months to fix the following:</p>
+<img src="/graphics/SitemapDisaster1.png" alt="SitemapDisaster1" />
+<p>For two months the UKAPW's sitemap was effectively empty. It seems few people noticed.</p>
+<h3>[2.2] I heard you the first time</h3>
+<p>In March 2011 I emailed the UKAPW to point out that the sitemap had multiple repeats, giving rise to more apparent repeats in the site navigation, as illustrated below. The email was not acknowledged. This time it took a few weeks to fix.</p>
+<img src="/graphics/SitemapDisaster2.png" alt="SitemapDisaster2" />
+<div>An actuarial friend said: "I’m not sure I’ve ever seen a website as bad as that to be honest!  Disappointing.  Perhaps they use somebody on work experience to do the website. I hope you have complained." I did complain, but repetitions in the sitemap and navigation continue. The following links show duplication in the navigation, 
+but the duplication is mirrored in the sitemap.</div>
+<ul>
+<li><a href="http://www.actuaries.org.uk/events/residential/pensions-conference-2011/about" rel="external">About the pensions conference</a></li>
+<li><a href="http://www.actuaries.org.uk/events/residential/giro-conference-and-exhibition-2011/about" rel="external">About the general insurance conference</a></li>
+</ul>
+<h3>[2.3] More subtle examples</h3>
+<p>Looking under research reveals the following duplication:</p>
+<img src="/graphics/HowToApplyForFunding.png" alt="HowToApplyForFunding" />
+<div>Here are the links: let's just get rid of one of them.</div>
+<ul>
+<li><a href="http://www.actuaries.org.uk/research-and-resources/pages/how-apply-funding-0" rel="external">http://www.actuaries.org.uk/research-and-resources/pages/how-apply-funding-0</a></li>
+<li><a href="http://www.actuaries.org.uk/research-and-resources/pages/how-apply-funding-1" rel="external">http://www.actuaries.org.uk/research-and-resources/pages/how-apply-funding-1</a></li>
+</ul>
+
+
+
+<!-- InstanceEndEditable -->
+</div>

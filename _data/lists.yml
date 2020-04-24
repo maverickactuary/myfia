@@ -1,12 +1,12 @@
 - title: Home
   url: /
-- title: My 2folder
-  url: /content/2folder/
-- title: My 3folder
-  url: /content/3folder/
-- title: My 4folder
-  url: /content/4folder/
-- title: My 5folder
-  url: /content/5folder/
+- title: Market players
+  url: /content/2marketplayers/
+- title: Building blocks
+  url: /content/3buildingblocks/
+- title: Delivering
+  url: /content/4delivering/
+# - title: Resources
+#  url: /content/5resources/
 - title: About &amp; contact
-  url: /content/6folder/
+  url: /content/6aboutcontact/

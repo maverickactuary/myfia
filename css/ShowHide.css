@@ -1,0 +1,149 @@
+/*
+function ShowJustOne(elementIndex) {
+	toggleAllOn();
+	for (i=0; i<headers.length; i++) { // loops through the headers a
+	if (elementIndex!=i) headers[i].className="hide"
+}
+*/
+
+
+/* key stuff that gives show/hide dynamism - external */
+
+#ShowHideWrapper a:hover {
+text-decoration:none;
+color: #FFF;
+background: #90F;
+}
+
+
+
+.ShowHideEnable .show {display: block;}
+.ShowHideEnable .hide {display: none;}	/* CSS Document */
+
+/* Columns by AKH */
+/* .navmenu1 div.colsplit3, div.colsplit4*/
+/*{*/
+/*  float: left;*/
+/*   margin-left:1%; requires 1% for each element */
+/*  padding:0 1% 0 1%; *//* requires 2% for each element */
+
+/*	The maths: From the above, each element requires 3% for padding / margin
+	2 cols: 100%/3-3% = 47 so 47% width
+	3 cols: 100%/3-3% = 30.33% so we have to go with 30% width for safety
+	4 cols: 100%/4-3% = 22% so 22% width
+*/
+
+/*  border:1px solid #000; */
+/*}*/
+
+div.colsplit3 {
+  width: 29%;
+}
+
+br {
+  clear: left;
+}
+
+
+/* External */
+
+dt {
+	font-weight: bold; 
+/*	cursor: pointer; */
+	width: 100%;
+	margin: 5px 0 5px 10px!important;	
+}
+
+
+/* for genuine Q & A approach using p tag following is useful */
+/*dd p:first-child {display: inline;}*/ /* this makes it so that the first paragraph within a dd will float up next to the A */
+/*
+p {line-height: 150% !important;}
+	*/
+
+
+
+/* =newmenu -------------------------------------------------------------------------------------------------------------- */
+
+.ShowHide {
+	width: 98%;
+	background: #CCCCFE; /* AKH green; */
+	padding: 1px 0px 1px 0px;
+	padding-left: 0px;
+/*	margin-right:0px 10px 0px 10px;*/
+	margin-left: 0px;
+	padding: 10px 0px 10px 0px;
+}
+
+.ShowHide p {
+	margin: 0;
+	padding: 0px;
+}
+
+.ShowHide h3 {
+	margin: 5px 10px !important;
+	padding-left: 10px;
+	height:35px;
+	line-height:35px;
+	background: grey;
+
+}
+
+.ShowHideWrapper .ShowHide h3 { /* Put .ShowHideWrapper in the BODY tag ... */
+	background: #FFF; /* AKH purple; */
+}
+
+.ShowHide dl {
+	padding-left: 0px;
+	margin-left: 0px!important; /* AKH 14/05/2011 */
+}
+
+.ShowHide dl dt {
+	background:#9999FF;
+	background: #99F; 
+/*	margin:10px 0 10px 0;*/
+	padding-left: 0px;
+	height:35px;
+	line-height:35px;
+}
+
+
+dt:before {
+	content: ".";
+/*	font-size: 0.01em;*/
+	margin-right: 10px; /* margin to the right of the . pushes content of the dt to the right */
+/*	display:none; INVISIBLE AND REMOVES SPACE TAKEN UP */
+	visibility:hidden; /* Just stops diaply; keeps space */
+}
+
+
+.ShowHide dd {
+	background: #CCC; /*#CCCCFE;*/ /* AKH orange; */
+	padding:1% 0 1% 0;
+	width: 100%;
+}
+
+.ShowHide a:hover { 
+	text-decoration:underline;
+}
+
+.ShowHide a {
+	display:block;
+	font-size: 12px;
+}
+
+.ShowHide a {
+	text-decoration:none;
+	color:#00F; 
+	float:left;
+	clear:left;
+	width:100%; 
+	line-height:1.7;
+}
+/*
+.myoutercontainer1 { line-height:3em!important; }
+*/
+.ShowHide h3, .ShowHide h3 a {
+		line-height:35px;
+		background-color:#99f;
+}

@@ -1,0 +1,85 @@
+.caption {
+	font-weight: bold;
+}
+
+table {
+	border-collapse:collapse;
+	margin-bottom: 10px!important;
+}
+
+		
+table, caption {
+	text-align: left;
+}
+			
+table .caption {
+	background: #B4A4EC; /*#F38630;*/
+/*	border: 1px solid #B66A2E;*/
+	border-width: 0 1px 1px 0;
+	color: #fff; /*#38210e*/
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	left: -5px;
+	padding: 3px 12px;
+	position: relative;
+	/*text-shadow: 0 1px 1px #EECAAE; AKH */
+	top: 4px;
+	}
+
+thead th {
+	font:bold 13px/18px georgia;
+	text-align:left;
+	background:#fff4c6;
+	color:#333;
+}
+
+tbody th {
+	font:bold 12px/15px georgia;
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align:left;
+	background:#fff9e1;
+	color:#333;
+/*	padding:8px;*/
+	border-bottom:1px solid #f3f0e4;
+	border-right:1px solid #fff;
+}
+
+th {
+    border: 1px inset #fff;
+/*    padding: 4px;*/
+    background-color: red; /*#00c;*/
+    background: red; /*#00c;*/
+}
+/*
+thead th {
+	font:bold 12px/13px georgia;
+	text-align:left;
+	background:#fff4c6;
+	color:#333;
+	padding:6px;
+
+}
+*/
+
+thead th, tbody td,tbody th {
+	border:1px solid #999; /*#f3f0e4;*/
+	vertical-align: top;
+}
+
+img {
+	vertical-align: middle;
+}
+
+
+tbody td,thead th, tbody th {
+	font:normal 12px/15px georgia;
+	font: normal 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color:#333;
+	padding:7px; /* 7px 7px 0px 7px; */
+/*	text-align: top;*/
+}
+
+thead th, tbody th {
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
