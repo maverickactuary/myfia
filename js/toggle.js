@@ -116,4 +116,3 @@ window.onload=function() {
 	displayToggle(); // enables toggle of individual answers
 	toggleAllOn();   // Initial state = "on"
 	}
-
