@@ -33,7 +33,7 @@
 <ol class="square">
     <li>Use the menus immediately above this</li>
     <li>Use "you are here" to the extreme left</li>
-    <li>Use the <a href="/content/4AboutContact/myFIASitemap.asp">myFIA sitemap</a></li>
+    <li>Use the <a href="/content/4AboutContact/myFIASitemap.html">myFIA sitemap</a></li>
 </ol>
 <div><strong>The full width horizontal menu...</strong></div>
 <p>... at the very top is an alternative UKAPW navigation &ndash; not for myFIA navigation.</p>
@@ -91,7 +91,7 @@
 </div>
 
 <div id="block_3">
-<!-- myinclude virtual="/inc/incFunctionality.asp" -->
+<!-- myinclude virtual="/inc/incFunctionality.html" -->
 <!-- InstanceBeginEditable name="block_3" -->
 <!-- InstanceEndEditable -->
 </div>
@@ -124,7 +124,7 @@ each new challenge."</em> The UKAPW should support this aim.</p>
 <li><strong>Outsiders looking in:</strong> users of actuarial advice and graduates who are potential actuaries. What impression does the site create?</li>
 </ul>
 <p>The UKAPW site does not live up to the "world class support" aim, especially contrasted with (e.g.) <a href="http://www.soa.org" rel="external">the SOA site</a> &ndash; <a href="/content/1CaseStudies/SOA.html">see our SOA review</a></p>
-<p><strong>But it's within our capabilities to fix it &ndash; fast. </strong> If we don't why should anyone believe we can tackle the harder problem of making financial sense of the future? <a href="/content/3ConstructiveCriticism/SortingItOut.asp">How can we fix the site?</a></p> 
+<p><strong>But it's within our capabilities to fix it &ndash; fast. </strong> If we don't why should anyone believe we can tackle the harder problem of making financial sense of the future? <a href="/content/3ConstructiveCriticism/SortingItOut.html">How can we fix the site?</a></p> 
 <!-- </div> -->
 <!--
 <div class="intro">
@@ -184,7 +184,7 @@ each new challenge."</em> The UKAPW should support this aim.</p>
 </div>
 
 <h2>Next steps: 3 ways forward for myFIA</h2>
-<p>The more important thing is "what's next for the UKAPW?" <a href="/content/4AboutContact/WhatsNext.asp">Read more ...</a></p> 
+<p>The more important thing is "what's next for the UKAPW?" <a href="/content/4AboutContact/WhatsNext.html">Read more ...</a></p> 
 
 <!-- InstanceEndEditable -->
 </div>
